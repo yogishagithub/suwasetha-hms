@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-require('./db'); // database eka initialize karanawa
+require('./db'); // database eka 
 
 const app = express();
 app.use(express.json());

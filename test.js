@@ -143,13 +143,13 @@ async function main() {
   });
   console.log('ADD STAFF:', await staffRes.json());
 
-  // Step 20: List staff
+  //  List staff
   const staffListRes = await fetch('http://localhost:3000/api/staff', {
     headers: { 'Cookie': cookie }
   });
   console.log('STAFF LIST:', await staffListRes.json());
 
-    // Step 21: Get dashboard stats
+    //  Get dashboard stats
   const dashRes = await fetch('http://localhost:3000/api/reports/dashboard', {
     headers: { 'Cookie': cookie }
   });
